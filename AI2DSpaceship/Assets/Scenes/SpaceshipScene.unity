@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4083485196315148175, guid: cc99ef1846642384dbcc7834205d254d, type: 3}
-  numberOfPrefabs: 5
+  numberOfPrefabs: 7
   minDistanceBetweenPrefabs: 15
   scaleRange: {x: 0.5, y: 1.2}
   purinrinTag: Purinrin
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4083485196315148175, guid: cc99ef1846642384dbcc7834205d254d, type: 3}
-  numberOfPrefabs: 5
+  numberOfPrefabs: 7
   minDistanceBetweenPrefabs: 15
   scaleRange: {x: 0.5, y: 1.2}
   purinrinTag: Purinrin
@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4083485196315148175, guid: cc99ef1846642384dbcc7834205d254d, type: 3}
-  numberOfPrefabs: 5
+  numberOfPrefabs: 7
   minDistanceBetweenPrefabs: 15
   scaleRange: {x: 0.5, y: 1.2}
   purinrinTag: Purinrin
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4083485196315148175, guid: cc99ef1846642384dbcc7834205d254d, type: 3}
-  numberOfPrefabs: 5
+  numberOfPrefabs: 7
   minDistanceBetweenPrefabs: 15
   scaleRange: {x: 0.5, y: 1.2}
   purinrinTag: Purinrin
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4083485196315148175, guid: cc99ef1846642384dbcc7834205d254d, type: 3}
-  numberOfPrefabs: 5
+  numberOfPrefabs: 7
   minDistanceBetweenPrefabs: 15
   scaleRange: {x: 0.5, y: 1.2}
   purinrinTag: Purinrin
@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4083485196315148175, guid: cc99ef1846642384dbcc7834205d254d, type: 3}
-  numberOfPrefabs: 5
+  numberOfPrefabs: 7
   minDistanceBetweenPrefabs: 15
   scaleRange: {x: 0.5, y: 1.2}
   purinrinTag: Purinrin
@@ -1512,7 +1512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4083485196315148175, guid: cc99ef1846642384dbcc7834205d254d, type: 3}
-  numberOfPrefabs: 5
+  numberOfPrefabs: 7
   minDistanceBetweenPrefabs: 15
   scaleRange: {x: 0.5, y: 1.2}
   purinrinTag: Purinrin

@@ -24,8 +24,8 @@ public class CanvasButtonController : MonoBehaviour
         Debug.Log("Quitting application...");
         Application.Quit();
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // This stops play mode in the editor
-#endif
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false; 
+    #endif
     }
 }

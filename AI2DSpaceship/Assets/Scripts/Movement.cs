@@ -127,39 +127,38 @@ public class Movement2D : MonoBehaviour
 
 
    private bool CheckRay(Ray ray, float avoidDistance)
-{
-    // Add offset in both forward (up) and side (left/right) directions
-    Vector3 offsetOrigin = ray.origin + transform.up * rayOffset + transform.right * 0.5f; // This adds a side offset (change 0.5f to spread farther apart)
-
-    RaycastHit2D hit = Physics2D.Raycast(offsetOrigin, ray.direction, maxSensingDistance);
-    bool avoidObstacle = false;
-
-    if (hit.collider != null && hit.collider.gameObject != this.gameObject)
     {
-        hitObject = hit.collider.gameObject;
+        // Add offset in both forward (up) and side (left/right) directions
+        Vector3 offsetOrigin = ray.origin + transform.up * rayOffset + transform.right * 0.5f; // This adds a side offset (change 0.5f to spread farther apart)
 
-        if (hitObject.GetComponent<Renderer>() != null)
-            hitObject.GetComponent<Renderer>().material.color = Color.red;
+        RaycastHit2D hit = Physics2D.Raycast(offsetOrigin, ray.direction, maxSensingDistance);
+        bool avoidObstacle = false;
 
-        if (hit.distance < avoidDistance)
+        if (hit.collider != null && hit.collider.gameObject != this.gameObject)
         {
-            avoidObstacle = true;
-            Debug.DrawLine(offsetOrigin, hit.point, Color.red);
+            hitObject = hit.collider.gameObject;
+
+            if (hitObject.GetComponent<Renderer>() != null)
+                hitObject.GetComponent<Renderer>().material.color = Color.red;
+
+            if (hit.distance < avoidDistance)
+            {
+                avoidObstacle = true;
+                Debug.DrawLine(offsetOrigin, hit.point, Color.red);
+            }
+            else
+            {
+                Debug.DrawLine(offsetOrigin, hit.point, Color.yellow);
+            }
         }
         else
         {
-            Debug.DrawLine(offsetOrigin, hit.point, Color.yellow);
+            if (hitObject != null && hitObject.GetComponent<Renderer>() != null)
+                hitObject.GetComponent<Renderer>().material.color = Color.yellow;
+
+            Debug.DrawLine(offsetOrigin, offsetOrigin + ray.direction * maxSensingDistance, Color.green);
         }
+
+        return avoidObstacle;
     }
-    else
-    {
-        if (hitObject != null && hitObject.GetComponent<Renderer>() != null)
-            hitObject.GetComponent<Renderer>().material.color = Color.yellow;
-
-        Debug.DrawLine(offsetOrigin, offsetOrigin + ray.direction * maxSensingDistance, Color.green);
-    }
-
-    return avoidObstacle;
-}
-
 }

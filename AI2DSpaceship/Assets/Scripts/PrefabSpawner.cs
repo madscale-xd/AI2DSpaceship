@@ -9,7 +9,7 @@ public class PrefabSpawner2D : MonoBehaviour
     public float minDistanceBetweenPrefabs = 1.5f;
 
     [Header("Scale Settings")]
-    public Vector2 scaleRange = new Vector2(0.5f, 1.5f); // Min and Max uniform scale
+    public Vector2 scaleRange = new Vector2(0.5f, 1.5f); 
 
     [Header("Purinrin Safety Settings")]
     public string purinrinTag = "Purinrin";
